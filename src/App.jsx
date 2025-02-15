@@ -9,14 +9,14 @@ import Product from './component/product/Product';
 
 export default function App() {
   return (
-<>
-<Navbar/>
-<Product/>
+    <>
+      <Navbar />
+      <Product />
 
-<Footer/>
-</>
-      
+      <Footer />
+    </>
 
-   
+
+
   )
 }

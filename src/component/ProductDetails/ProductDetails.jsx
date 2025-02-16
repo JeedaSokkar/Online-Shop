@@ -16,9 +16,9 @@ export default function () {
     <>
       {error ? <div className="alert alert-primary mt-3" role="alert">{error}</div> : ''}
       <div className="container mt-4 mb-4" key={data.id}>
-        <h1 className={`${style.title} text-primary d-flex align-item-center justify-content-center mb-4`}>{data.title}</h1>
+        <h1 className={`${style.title} text-primary-emphasis d-flex align-item-center justify-content-center mb-4`}>{data.title}</h1>
         <div className="d-flex flex-row align-items-start mb-4" >
-          {data.images.map((img) => (
+          {data?.images?.map((img) => (
             <div className="card p-3 border-0 shadow-sm text-center product-card " key={img.id}>
               <img src={img} alt={data.title} className="img-fluid rounded" style={{ maxWidth: '200px', height: 'auto' }} />
             </div>
@@ -30,7 +30,7 @@ export default function () {
           <span className='fw-bold mb-2'><span className='fw-semibold'>Price: </span>${data.price}</span>
           <span className="product-rating"><span className='fw-semibold'>Rating : </span>{data.rating} / 5</span>
           <div className="mt-2">
-            {data.reviews.map((review) => (
+            {data?.reviews?.map((review) => (
               <div className="card mb-3 p-3 border-light shadow-sm" key={review.id}>
                 <div className="card-body">
                   <h5 className="card-title fw-bold">{review.reviewerName}</h5>

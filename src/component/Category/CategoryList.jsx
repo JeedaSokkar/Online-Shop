@@ -20,14 +20,16 @@ export default function CategoryList() {
       {error ? <div className="alert alert-primary mt-3" role="alert">{error}</div> : ''}
       <div className="container mt-4 mb-4">
         <div className="row">
-        {data.map((item,index) => 
+        {data?.map((item,index) => 
             <div key={index} className="col-md-4 col-sm-6 col-12 mb-3 mt-3">
+               <Link to={`/Category/${item}`} className='text-decoration-none'>
               <div className={`${style.item} card shadow-sm border-0`}>
                 <div className="card-body text-center">
                   <h6 className={`${style.item} card-title text-uppercase fw-bold`}>{item}</h6>
-                  <Link to={`/Category/${item}`} className={`${style.Detials} btn btn-primary mt-2`}>Details</Link>
+                
                 </div>
               </div>
+               </Link>
             </div>
          )}
         </div>

@@ -14,14 +14,14 @@ export default function CategoryItem() {
 
     return (
         <div className="container mt-4">
-            <h2 className={`${style.title} text-primary text-center`}>Products in {category}</h2>
+            <h2 className={`${style.title} text-primary-emphasis text-center`}>Products in {category}</h2>
             <div className="row">
 
-                {data.products.map((product) => (
+                {data?.products?.map((product) => (
                     <div key={product.id} className="col-md-4 col-sm-6 col-12 mb-3 mt-3 d-flex">
                         <div className="card shadow-sm border-0 d-flex flex-column h-100" style={{ width: '16rem' }}>
                             <div className="card-body text-center d-flex flex-column">
-                                <img src={product.thumbnail} alt="" />
+                                <img src={product.thumbnail} />
                                 <h6 className="card-title mt-2">{product.title}</h6>
                                 <p className="text-muted">{product.description}</p>
                                 <p className="fw-bold mt-auto">${product.price}</p>

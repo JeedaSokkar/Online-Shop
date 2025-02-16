@@ -1,8 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 export default function useFetch(url) {
-    const [data, setData] = useState({ products: [] , 
-        images :[] ,reviews:[] });
+    const [data, setData] = useState({});
     const [error, setError] = useState(null);
     const [isloading,setIsLoading] = useState(true);
 

@@ -15,9 +15,9 @@ export default function () {
     <>
       {error ? <div className="alert alert-primary mt-3" role="alert">{error}</div> : ''}
       <div className="container mt-5 mb-4">
-        <h1 className={`${products.head}`}>Products</h1>
+        <h1 className={`${products.head} text-primary-emphasis`}>Products</h1>
         <div className="row">
-          {data.products.map(product =>
+          {data?.products?.map(product =>
             <div className="card col-lg-3 g-4 me-4 shadow" style={{ width: '16rem' }} key={product.id}>
               <img src={product.thumbnail} className="card-img-top" alt={product.title} />
               <div className="card-body  d-flex flex-column">

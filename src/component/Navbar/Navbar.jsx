@@ -18,11 +18,11 @@ export default function Navbar() {
             <Link className="nav-link text-primary active" aria-current="page" to={'/'}>Home</Link>
           </li>
           <li className="nav-item">
-            <Link className={`${nav.navitem} nav-link`} to="#">Category</Link>
+            <Link className={`${nav.navitem} nav-link`} to={'/Category'}>Category</Link>
           </li>
          
           <li className="nav-item">
-            <Link className={`${nav.navitem} nav-link`} aria-disabled="true">product</Link>
+            <Link className={`${nav.navitem} nav-link`} aria-disabled="true" to={`/Products`}>product</Link>
           </li>
          
           <li className="nav-item" >

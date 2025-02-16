@@ -8,7 +8,7 @@ export default function Navbar() {
     <div>
   <nav className={`${nav.navbar} navbar navbar-expand-lg bg-body-tertiary`}>
     <div className="container">
-      <Link className="navbar-brand fw-bold fs-1 text-primary" href="#">SHOP</Link>
+      <Link className="navbar-brand fw-bold fs-1 text-primary" to="#">SHOP</Link>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon" />
       </button>
@@ -18,7 +18,7 @@ export default function Navbar() {
             <Link className="nav-link text-primary active" aria-current="page" to={'/'}>Home</Link>
           </li>
           <li className="nav-item">
-            <Link className={`${nav.navitem} nav-link`} href="#">Category</Link>
+            <Link className={`${nav.navitem} nav-link`} to="#">Category</Link>
           </li>
          
           <li className="nav-item">
